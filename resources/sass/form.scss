@@ -1,0 +1,165 @@
+.outline{
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  //box-sizing: content-box;
+  background-color: transparent;
+
+  &:focus{
+    box-shadow: 0 1px 0 0 #4285f4;
+    border-bottom: 1px solid #4285f4;
+    background: transparent;
+  }
+
+  &:read-only{
+    background: transparent;
+  }
+}
+
+
+.outline-validate{
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid #e04839;
+  border-radius: 0;
+  background-color: transparent;
+
+  &:focus{
+    box-shadow: 0 1px 0 0 #e04839;
+    border-bottom: 1px solid #e04839;
+    background: transparent;
+  }
+
+  &:read-only{
+    background: transparent;
+  }
+}
+
+.validate-info {
+  font-size: 14px;
+  color: #c50606;
+}
+
+
+
+.head{
+  padding-bottom: 30px;
+  color: #7d7d7d;
+  font-weight: 600;
+
+  legend{
+    font-size: 1.8em;
+  }
+}
+
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label.switch-js {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background: #bbbbbb;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin-top: -20px;
+}
+
+label.switch-js:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label.switch-js {
+  background: #5a8ede;
+}
+
+input:checked + label.switch-js:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label.switch-js:active:after {
+  width: 30px;
+}
+
+.space-left{
+  &--p-mid{
+    padding-left: 40px;
+  }
+
+  &--m-small{
+       margin-left: 14px;
+     }
+
+  &--m-mid{
+    margin-left: 28px;
+  }
+}
+
+.space-top{
+  &--p-mid{
+    padding-top: 40px;
+  }
+
+  &--p-big{
+    padding-top: 100px;
+  }
+
+  &--m-small{
+    margin-top: 14px;
+  }
+}
+
+.vertical-bottom{
+  display: flex;
+  align-items: flex-end;
+}
+
+.vertical-mid{
+  display: flex;
+  align-items: center;
+}
+
+hr.line-form{
+  border: 1px solid #d0d0d0;
+}
+
+
+.shadow-btn{
+  border-radius: 0.1em;
+  box-shadow: 3px 3px 5px #80808094;
+  padding: 8px 30px;
+
+  &:hover{
+    box-shadow: 3px 5px 7px #80808094;
+  }
+}
+
+
+.icon-btn{
+  border-radius: 0.1em;
+  box-shadow: 3px 3px 5px #80808094;
+
+  &:hover{
+    box-shadow: 3px 5px 7px #80808094;
+  }
+}

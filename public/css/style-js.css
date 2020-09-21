@@ -1,0 +1,22 @@
+.hide-block {
+  display: none;
+}
+
+.show-block {
+  display: block;
+}
+
+.show-block-flex {
+  display: flex;
+}
+
+.vertical-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.strong-text {
+  font-weight: 600;
+  color: #717171;
+}
+
